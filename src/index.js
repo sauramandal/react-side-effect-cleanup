@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-
-import "./styles.css";
-
 import fetch from "./fake-fetch";
+import "./styles.css";
 
 function Employees() {
   const [list, setList] = useState(null);
@@ -19,8 +17,10 @@ function Employees() {
         controller = null;
       } catch (e) {
         // Handle fetch error
+        console.log("error", e);
       }
     })();
+    // clean up
     return () => controller?.abort();
   }, []);
 
