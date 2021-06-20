@@ -1,0 +1,30 @@
+.App {
+  font-family: sans-serif;
+}
+
+.item {
+  border: 1px solid lightgray;
+  padding: 4px;
+  margin-bottom: 2px;
+  width: 200px;
+}
+
+.list,
+.fetching {
+  margin: 10px;
+}
+
+.about {
+  font-style: italic;
+  margin: 20px;
+}
+
+input {
+  margin-left: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid lightgray;
+  padding: 5px;
+  border-radius: 4px;
+  width: 150px;
+}
